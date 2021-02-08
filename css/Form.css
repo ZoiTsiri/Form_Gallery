@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EFD81D;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    overflow: hidden;
+	width: 500px;
+	max-width: 100%;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+/* to fix the header for going out of the container we add overflow:hidden */
+
+.header {
+	border-bottom: 1px solid #f0f0f0;
+	background-color: #fffdea;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-fill {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-fill label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-fill input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 15px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-fill i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-fill small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form button {
+	background-color: #EFD81D;
+	border: 2px solid #EFD81D;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+
+.form-fill input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-fill.success input {
+	border-color: #22bb33;
+}
+
+.form-fill.error input {
+	border-color: #bb2124;
+}
+
+.form-fill.success i.fa-check-circle {
+	color: #22bb33;
+	visibility: visible;
+}
+
+.form-fill.error i.fa-times-circle {
+	color: #bb2124;
+	visibility: visible;
+}
+
+.form-fill.error small {
+	visibility: visible;
+}
